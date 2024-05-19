@@ -10,9 +10,9 @@ const GlobalFeedback = ({navigation}) => {
         <View style = {styles.button} >
             <Text style = {styles.buttonText}>Youtube Playlists</Text>
         </View>
-        <View style = {styles.button} >
+        <TouchableOpacity onPress = {() => navigation.navigate("RecommendedTeachers") } style = {styles.button} >
             <Text style = {styles.buttonText}>Recommended Teachers</Text>
-        </View>
+        </TouchableOpacity>
         <View style = {styles.button} >
             <Text style = {styles.buttonText}>Student Helpers</Text>
         </View>

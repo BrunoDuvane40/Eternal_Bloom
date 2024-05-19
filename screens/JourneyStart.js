@@ -12,6 +12,7 @@ const JourneyStart = ({navigation}) => {
             <View style={styles.buttonss}>
                 <View style = {{flexDirection: 'row'}}>
                     <TouchableOpacity onPress={() => navigation.navigate("CurricularUnit")} style = {styles.button} >
+                        <Image source={require('../assets/pi.png')} style={{width: width * 0.1, height: width * 0.1, marginTop: height * 0.05}} />
                         <Text style = {styles.buttonText}>Maths</Text>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate("JourneyStart")} style = {styles.button}>

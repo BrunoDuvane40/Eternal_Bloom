@@ -23,7 +23,7 @@ const ReviewSlide4 = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    height: height,
+    height: height*1.2,
     width: width,
   },
     PageTitle: {
