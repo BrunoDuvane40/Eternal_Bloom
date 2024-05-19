@@ -7,7 +7,7 @@ const IDPage = ({navigation}) => {
   return (
     <ImageBackground source={require('../assets/background.png')} style={styles.container}>
         <Text style = {styles.PageTitle}>I am a</Text>
-        <TouchableOpacity onPress={() => navigation.navigate("JourneyStart")} style = {styles.button} >
+        <TouchableOpacity onPress={() => navigation.navigate("ChooseTutor")} style = {styles.button} >
             <Text style = {styles.buttonText}>Student</Text>
         </TouchableOpacity>
         <TouchableOpacity style = {styles.button} >
