@@ -3,15 +3,15 @@ import { StyleSheet, Text, View, ImageBackground, Dimensions, TouchableOpacity }
 
 const { width, height } = Dimensions.get('window');
 
-const IDPage = ({navigation}) => {
+const CurricularUnit = ({navigation}) => {
   return (
     <ImageBackground source={require('../assets/background.png')} style={styles.container}>
-        <Text style = {styles.PageTitle}>I am a</Text>
-        <TouchableOpacity onPress={() => navigation.navigate("JourneyStart")} style = {styles.button} >
-            <Text style = {styles.buttonText}>Student</Text>
+        <Text style = {styles.PageTitle}>Maths</Text>
+        <TouchableOpacity onPress={() => navigation.navigate("ReviewSlide1")} style = {styles.button} >
+            <Text style = {styles.buttonText}>Last Test</Text>
         </TouchableOpacity>
         <TouchableOpacity style = {styles.button} >
-            <Text style = {styles.buttonText}>Teacher</Text>
+            <Text style = {styles.buttonText}>Current Year</Text>
         </TouchableOpacity>
         <StatusBar  />
     </ImageBackground>
@@ -53,4 +53,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default IDPage;
+export default CurricularUnit;

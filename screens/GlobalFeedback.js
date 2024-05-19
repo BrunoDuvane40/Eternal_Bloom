@@ -3,16 +3,19 @@ import { StyleSheet, Text, View, ImageBackground, Dimensions, TouchableOpacity }
 
 const { width, height } = Dimensions.get('window');
 
-const IDPage = ({navigation}) => {
+const GlobalFeedback = ({navigation}) => {
   return (
     <ImageBackground source={require('../assets/background.png')} style={styles.container}>
-        <Text style = {styles.PageTitle}>I am a</Text>
-        <TouchableOpacity onPress={() => navigation.navigate("JourneyStart")} style = {styles.button} >
-            <Text style = {styles.buttonText}>Student</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style = {styles.button} >
-            <Text style = {styles.buttonText}>Teacher</Text>
-        </TouchableOpacity>
+        <Text style = {styles.PageTitle}>Global Feedback</Text>
+        <View style = {styles.button} >
+            <Text style = {styles.buttonText}>Youtube Playlists</Text>
+        </View>
+        <View style = {styles.button} >
+            <Text style = {styles.buttonText}>Recommended Teachers</Text>
+        </View>
+        <TouchableOpacity onPress={() => navigation.navigate("ChooseTutor")} style = {styles.button} >
+        <Text style = {styles.buttonText}>Student Helpers</Text>
+          </TouchableOpacity>
         <StatusBar  />
     </ImageBackground>
   );
@@ -24,7 +27,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
     PageTitle: {
-        fontSize: height * 0.06,
+        fontSize: height * 0.05,
         color: 'black',
         fontWeight: 'light',
         marginTop: height * 0.25,
@@ -33,12 +36,12 @@ const styles = StyleSheet.create({
     },
   button: {
     alignItems: "center",
-    backgroundColor: "#C0E8E3",
-    marginTop: height * 0.02,
-    marginLeft: width * 0.1,
-    width: width * 0.8,
-    height: height * 0.1,
-    borderRadius: 20,
+    backgroundColor: "#D9D9D9",
+    marginTop: height * 0.025,
+    marginLeft: width * 0.125,
+    width: width * 0.78,
+    height: height * 0.10,
+    borderRadius: 5,
     shadowColor: 'black',
     shadowOffset: {width: 0, height: 2},
     shadowOpacity: 0.5,
@@ -53,4 +56,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default IDPage;
+export default GlobalFeedback;

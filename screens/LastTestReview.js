@@ -3,15 +3,15 @@ import { StyleSheet, Text, View, ImageBackground, Dimensions, TouchableOpacity }
 
 const { width, height } = Dimensions.get('window');
 
-const IDPage = ({navigation}) => {
+const LastTestReview = ({navigation}) => {
   return (
-    <ImageBackground source={require('../assets/background.png')} style={styles.container}>
-        <Text style = {styles.PageTitle}>I am a</Text>
-        <TouchableOpacity onPress={() => navigation.navigate("JourneyStart")} style = {styles.button} >
-            <Text style = {styles.buttonText}>Student</Text>
+    <ImageBackground source={require('../assets/background3.png')} style={styles.container}>
+        <Text style = {styles.PageTitle}>Last Test Review</Text>
+        <TouchableOpacity onPress={() => navigation.navigate("GlobalFeedback")} style = {styles.button} >
+            <Text style = {styles.buttonText}>Weak Points</Text>
         </TouchableOpacity>
         <TouchableOpacity style = {styles.button} >
-            <Text style = {styles.buttonText}>Teacher</Text>
+            <Text style = {styles.buttonText}>Improvements</Text>
         </TouchableOpacity>
         <StatusBar  />
     </ImageBackground>
@@ -53,4 +53,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default IDPage;
+export default LastTestReview;

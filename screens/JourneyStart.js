@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ImageBackground, Dimensions, TouchableOpacity } from 'react-native';
 
+
 const { width, height } = Dimensions.get('window');
 
 
@@ -10,8 +11,8 @@ const JourneyStart = ({navigation}) => {
         <Text style = {styles.PageTitle}>My Journey</Text>
             <View style={styles.buttons}>
                 <View style = {{flexDirection: 'row'}}>
-                    <TouchableOpacity onPress={() => navigation.navigate("JourneyStart")} style = {styles.button} >
-                        <Text style = {styles.buttonText}>Student</Text>
+                    <TouchableOpacity onPress={() => navigation.navigate("CurricularUnit")} style = {styles.button} >
+                        <Text style = {styles.buttonText}>Maths</Text>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate("JourneyStart")} style = {styles.button} >
                         <Text style = {styles.buttonText}>Student</Text>
