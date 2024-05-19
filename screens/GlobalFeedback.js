@@ -10,13 +10,16 @@ const GlobalFeedback = ({navigation}) => {
         <View style = {styles.button} >
             <Text style = {styles.buttonText}>Youtube Playlists</Text>
         </View>
-        <TouchableOpacity onPress = {() => navigation.navigate("RecommendedTeachers") } style = {styles.button} >
+        <TouchableOpacity  style = {styles.button} >
             <Text style = {styles.buttonText}>Recommended Teachers</Text>
         </TouchableOpacity>
-        <View style = {styles.button} >
+        <TouchableOpacity onPress = {() => navigation.navigate("RecommendedTeachers") }style = {styles.button} >
             <Text style = {styles.buttonText}>Student Helpers</Text>
-        </View>
-        <StatusBar  />
+        </TouchableOpacity>
+        <TouchableOpacity  style = {styles.button} >
+          <Text style = {styles.buttonText}>Student Helpers</Text>
+            </TouchableOpacity>
+          <StatusBar/>
     </ImageBackground>
   );
 }

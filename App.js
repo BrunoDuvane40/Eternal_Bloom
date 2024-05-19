@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import IDPage from './screens/IDPage';
 import JourneyStart from './screens/JourneyStart';
-import ReportPage from './screens/ReportPage';
+import ChooseTutor from './screens/ChooseTutor';
 import CurricularUnit from './screens/CurricularUnit';
 import ReviewSlide1 from './screens/ReviewSlide1';
 import ReviewSlide2 from './screens/ReviewSlide2';
@@ -21,7 +21,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="IDPage" screenOptions={{ headerMode: 'none' }}>
         <Stack.Screen name="IDPage" component={IDPage}/>
         <Stack.Screen name="JourneyStart" component={JourneyStart}/>
-        <Stack.Screen name="ReportPage" component={ReportPage}/>
+        <Stack.Screen name="ChooseTutor" component={ChooseTutor} />
         <Stack.Screen name="CurricularUnit" component={CurricularUnit}/>
         <Stack.Screen name="ReviewSlide1" component={ReviewSlide1}/>
         <Stack.Screen name="ReviewSlide2" component={ReviewSlide2}/>

@@ -9,7 +9,7 @@ const JourneyStart = ({navigation}) => {
   return (
     <ImageBackground source={require('../assets/background2.png')} style={styles.container}>
         <Text style = {styles.PageTitle}>My Journey</Text>
-            <View style={styles.buttonss}>
+            <View style={styles.buttons}>
                 <View style = {{flexDirection: 'row'}}>
                     <TouchableOpacity onPress={() => navigation.navigate("CurricularUnit")} style = {styles.button} >
                         <Image source={require('../assets/pi.png')} style={{width: width * 0.1, height: width * 0.1, marginTop: height * 0.05}} />

@@ -6,7 +6,7 @@ const { width, height } = Dimensions.get('window');
 const RecommendedTeachers = ({navigation}) => {
   return (
     <ImageBackground source={require('../assets/background.png')} style={styles.container}>
-        <Text style = {styles.PageTitle}>Teachers</Text>
+        <Text style = {styles.PageTitle}>Students</Text>
         <View style = {styles.button} >
             <Text style = {styles.buttonText}>Ana Sofia Ferrão</Text>
         </View>
@@ -16,9 +16,9 @@ const RecommendedTeachers = ({navigation}) => {
         <View style = {styles.button} >
             <Text style = {styles.buttonText}>Marta Reis</Text>
         </View>
-        <View style = {styles.button} >
-            <Text style = {styles.buttonText}>Rui Miguel Falcão</Text>
-        </View>
+        <TouchableOpacity onPress={() => navigation.navigate("ChooseTutor")} style = {styles.button} >
+            <Text style = {styles.buttonText}>Rui Pais</Text>
+        </TouchableOpacity>
         <StatusBar  />
     </ImageBackground>
   );
