@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ImageBackground, Dimensions, TouchableOpacity, Image } from 'react-native';
 
+
 const { width, height } = Dimensions.get('window');
 
 
@@ -10,8 +11,7 @@ const JourneyStart = ({navigation}) => {
         <Text style = {styles.PageTitle}>My Journey</Text>
             <View style={styles.buttonss}>
                 <View style = {{flexDirection: 'row'}}>
-                    <TouchableOpacity onPress={() => navigation.navigate("JourneyStart")} style = {styles.button} >
-                        <Image source={require('../assets/pi.png')} style={{width: width * 0.1, height: width * 0.1, marginTop: height * 0.05}} />
+                    <TouchableOpacity onPress={() => navigation.navigate("CurricularUnit")} style = {styles.button} >
                         <Text style = {styles.buttonText}>Maths</Text>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate("JourneyStart")} style = {styles.button}>
